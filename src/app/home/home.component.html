@@ -1,0 +1,18 @@
+<div class="messageHeader">
+    <div class="mainMessage">
+        <p>{{message}}</p>
+    </div>
+    <img class="imgLogo" src="../../assets/Logo1.png">
+</div>
+
+<div class="cardsList" *ngFor="let card of cardslist">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{card.name}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <a routerLink='{{card.route}}' mat-button><mat-icon>{{card.icon}}</mat-icon></a>
+          <mat-card-title>{{card.num}}</mat-card-title>
+        </mat-card-content>
+      </mat-card>
+</div>

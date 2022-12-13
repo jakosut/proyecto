@@ -1,0 +1,52 @@
+.editContent{
+    margin:0px auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #052E66;
+    width: 800px;
+    height: 500px;
+    border-radius: 22px 22px 22px 22px;
+    -moz-border-radius: 22px 22px 22px 22px;
+    -webkit-border-radius: 22px 22px 22px 22px;
+    border: 0px solid #000000;
+    
+}
+.divbuttons{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+mat-form-field{
+    width: 300px;
+    margin-right: 1rem;
+}
+mat-select{
+    border-radius: 22px 22px 22px 22px;
+    -moz-border-radius: 22px 22px 22px 22px;
+    -webkit-border-radius: 22px 22px 22px 22px;
+    border: 0px solid #000000;
+}
+input{
+    width: 200px;
+}
+button {
+    margin-right: 1rem;
+}
+.divImgPerfil{
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    border-radius: 22px 22px 22px 22px;
+    -moz-border-radius: 22px 22px 22px 22px;
+    -webkit-border-radius: 22px 22px 22px 22px;
+    border: 0px solid #000000;
+}
+form{
+    margin-top: 2rem;
+}

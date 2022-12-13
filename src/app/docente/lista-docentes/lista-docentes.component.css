@@ -1,0 +1,22 @@
+table {
+    width: 80%;
+    margin-left: 5rem;
+    margin-top: 1rem;
+  }
+  mat-paginator{
+    width: 80%;
+    margin-left: 6rem;
+    
+  }
+  mat-form-field{
+    margin-left: 5rem;
+}
+  
+  mat-cal-field{
+  margin-left: 5rem;
+}
+.divSpinner{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

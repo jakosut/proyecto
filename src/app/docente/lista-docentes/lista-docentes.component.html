@@ -1,0 +1,69 @@
+<div class="divSpinner" *ngIf="!listaDocentes">
+    <mat-spinner></mat-spinner>
+</div>
+<ng-container>
+    <table mat-table [dataSource]="listaDocentes" class="mat-elevation-z8">
+        <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+
+        <!-- Nombre Column -->
+        <ng-container matColumnDef="nombre">
+        <th mat-header-cell *matHeaderCellDef> Nombre </th>
+        <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+        </ng-container>
+
+        <!-- Apellido Column -->
+        <ng-container matColumnDef="apellido">
+        <th mat-header-cell *matHeaderCellDef> Apellido </th>
+        <td mat-cell *matCellDef="let element"> {{element.apellido}} </td>
+        </ng-container>
+
+        
+
+        <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef> e-mail </th>
+            <td mat-cell *matCellDef="let element"> {{element.email}}</td>
+            </ng-container>
+        
+
+       <!--boton data_range-->
+   <!--    <ng-container matColumnDef="ver">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+                  <a (click)="doc=true" mat-icon-button><mat-icon>date_range</mat-icon></a>
+              </td>
+        </ng-container>
+    -->     
+ 
+      <ng-container matColumnDef="ver">
+            <th mat-header-cell *matHeaderCellDef></th>
+            <td mat-cell *matCellDef="let element">
+                <a routerLink="/tabla-calendario" mat-flat-button color="primary">Ver</a>
+            </td>
+        </ng-container>
+    
+        
+        <tr mat-header-row  *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        
+    </table>
+    <!-- Paginador -->
+    <mat-paginator [pageSizeOptions]="[5, 10, 20,50]"
+                showFirstLastButtons
+                [length]="totalRegistrosPorPagina" 
+                [pageSize]="cantidadRegistrosAMostrar"
+                (page)="actualizarPaginacion($event)"
+                aria-label="Select page of periodic elements">
+    </mat-paginator>
+    <!-- tabla de Calendario -->
+    <table *ngIf="doc" width="100%" top="15px">
+      <tr >
+     
+      <td class="cardListGrilla"  valign="top">
+        <app-calendario_docente  *ngIf="doc"> </app-calendario_docente>  
+      </td>
+      </tr>
+    </table>
+</ng-container>
+
+

@@ -1,0 +1,22 @@
+mat-toolbar{
+    position: sticky;
+    position: -webkit-sticky; /*sticky para safari*/
+    top:0;
+    z-index: 1000; /* para que no haya problema y se coloque encima de otro elementos*/
+    background-color: #D9D9D9;
+}
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+}
+#LogoHome:hover{
+    background-color:#D9D9D9;
+}
+.divUser{
+    float:right;
+    margin-left: 90%;
+}

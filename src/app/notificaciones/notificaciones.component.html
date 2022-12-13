@@ -1,0 +1,5 @@
+<div class="mainChat">
+    <div *ngFor="let message of messagesReceived">
+        <app-chat-item [messageReceived]="message"></app-chat-item>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+mat-card{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 30vw;
+    border-radius: 22px 22px 22px 22px;
+    -moz-border-radius: 22px 22px 22px 22px;
+    -webkit-border-radius: 22px 22px 22px 22px;
+    border: 0px solid #000000;
+}

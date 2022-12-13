@@ -1,0 +1,6 @@
+<div class="divSpinner" *ngIf="!usuario">
+    <mat-spinner></mat-spinner>
+</div>
+<div *ngIf="usuario">
+    <app-formulario-usuario [usuario]="usuario" (submit)="guardarCambios($event)"></app-formulario-usuario>
+</div>
